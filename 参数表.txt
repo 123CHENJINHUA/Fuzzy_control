@@ -1,0 +1,38 @@
+    pressure['VL'] = fuzz.trapmf(pressure_range, [0, 0, 20, 23])
+    pressure['L'] = fuzz.trimf(pressure_range, [20, 23, 26])
+    pressure['M'] = fuzz.trimf(pressure_range, [23, 26, 30])
+    pressure['H'] = fuzz.trimf(pressure_range, [26, 30, 36])
+    pressure['VH'] = fuzz.trimf(pressure_range, [30, 36, 42])
+
+    pressure_rate['FL'] = fuzz.trapmf(pressure_rate_range, [-20, -20, -8, -4])
+    pressure_rate['SL'] = fuzz.trimf(pressure_rate_range, [-8, -4, 0])
+    pressure_rate['SS'] = fuzz.trimf(pressure_rate_range, [-4, 0, 25])
+    pressure_rate['FS'] = fuzz.trimf(pressure_rate_range, [0, 50, 65])
+    pressure_rate['VFS'] = fuzz.trimf(pressure_rate_range, [50, 65, 65])
+
+    speed['VS'] = fuzz.trapmf(speed_range, [0, 0, 5, 10])
+    speed['S'] = fuzz.trimf(speed_range, [5, 10, 20])
+    speed['M'] = fuzz.trimf(speed_range, [10, 20, 30])
+    speed['F'] = fuzz.trimf(speed_range, [20, 30, 40])
+    speed['VF'] = fuzz.trapmf(speed_range, [30, 40,50, 50])
+
+
+    pressure['VL'] = fuzz.trapmf(pressure_range, [0, 0, 40, 43])
+    pressure['L'] = fuzz.trimf(pressure_range, [40, 43, 46])
+    pressure['M'] = fuzz.trimf(pressure_range, [43, 46, 50])
+    pressure['H'] = fuzz.trimf(pressure_range, [46, 50, 56])
+    pressure['VH'] = fuzz.trimf(pressure_range, [50, 56, 62])
+
+    pressure_rate['FL'] = fuzz.trapmf(pressure_rate_range, [-20, -20, -8, -4])
+    pressure_rate['SL'] = fuzz.trimf(pressure_rate_range, [-8, -4, 0])
+    pressure_rate['SS'] = fuzz.trimf(pressure_rate_range, [-4, 0, 25])
+    pressure_rate['FS'] = fuzz.trimf(pressure_rate_range, [0, 50, 65])
+    pressure_rate['VFS'] = fuzz.trimf(pressure_rate_range, [50, 65, 65])
+
+    speed['VS'] = fuzz.trapmf(speed_range, [0, 0, 10, 20])
+    speed['S'] = fuzz.trimf(speed_range, [10, 20, 30])
+    speed['M'] = fuzz.trimf(speed_range, [20, 30, 40])
+    speed['F'] = fuzz.trimf(speed_range, [30, 40, 50])
+    speed['VF'] = fuzz.trapmf(speed_range, [40, 50,60, 60])
+
+
